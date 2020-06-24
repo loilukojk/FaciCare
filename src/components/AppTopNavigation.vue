@@ -162,14 +162,14 @@ export default {
           let currentURL = window.location.href.split("/");
           if (currentURL[currentURL.length - 2] == "order-detail") {
             // move to order-detail page
-            let path = "/facicare/order-detail" + "/" + orderID;
+            let path = "/order-detail" + "/" + orderID;
             this.$router.push({ path: path }).catch(() => {});
 
             // reload with current page
             this.$router.go();
           } else {
             // move to order-detail page
-            let path = "/facicare/order-detail" + "/" + orderID;
+            let path = "/order-detail" + "/" + orderID;
             this.$router.push({ path: path }).catch(() => {});
 
             // reload with current page

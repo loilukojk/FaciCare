@@ -421,7 +421,7 @@ export default {
 
       // move to order detail page
       let orderid = "create-new";
-      let path = "/facicare/order-detail" + "/" + orderid;
+      let path = "/order-detail" + "/" + orderid;
       this.$router.push({ path: path }).catch(() => {});
     },
     viewOrderDetail: function(item) {
@@ -430,7 +430,7 @@ export default {
 
       // move to order detail page
       let orderid = item.record_id;
-      let path = "/facicare/order-detail" + "/" + orderid;
+      let path = "/order-detail" + "/" + orderid;
       this.$router.push({ path: path }).catch(() => {});
     }
   },

@@ -2864,7 +2864,7 @@ export default {
     //   // Handle
     //   return new Promise((resolve, reject) => {
     //     let serverDomain = this.$store.getters.serverDomain;
-    //     let url = serverDomain + "/api/facicare/v1/order/generate_id";
+    //     let url = serverDomain + "/api/v1/order/generate_id";
     //     let data = {
     //       service_name: this.order.data_item.content.chosenServices
     //     };
@@ -3127,7 +3127,7 @@ export default {
             .post(url, data, config)
             .then(response => {
               let orderid = this.order.record_id;
-              let path = "/facicare/order-detail" + "/" + orderid;
+              let path = "/order-detail" + "/" + orderid;
               this.$router.push({ path: path }).catch(() => {});
               this.$router.go();
             })

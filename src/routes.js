@@ -12,14 +12,10 @@ import PageNotFound from './pages/PageNotFound';
 const routes = [
     {
         path: '/',
-        redirect: '/facicare/dashboard',
+        redirect: '/dashboard',
     },
     {
-        path: '/facicare',
-        redirect: '/facicare/dashboard',
-    },
-    {
-        path: '/facicare/dashboard',
+        path: '/dashboard',
         name: 'Dashboard',
         component: Dashboard,
         meta: {
@@ -27,7 +23,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/orders',
+        path: '/orders',
         name: 'Order',
         component: Order,
         meta: {
@@ -35,7 +31,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/order-detail/:orderid',
+        path: '/order-detail/:orderid',
         name: 'OrderDetail',
         component: OrderDetail,
         meta: {
@@ -43,7 +39,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/technicians',
+        path: '/technicians',
         name: 'Technician',
         component: Technician,
         meta: {
@@ -51,7 +47,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/customers',
+        path: '/customers',
         name: 'Customer',
         component: Customer,
         meta: {
@@ -59,7 +55,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/user-profile',
+        path: '/user-profile',
         name: 'UserProfile',
         component: UserProfile,
         meta: {
@@ -67,7 +63,7 @@ const routes = [
         }
     },
     {
-        path: '/facicare/login',
+        path: '/login',
         name: 'Login',
         component: Login,
         meta: {
@@ -75,12 +71,12 @@ const routes = [
         }
     },
     {
-        path: "/facicare/logout",
+        path: "/logout",
         name: 'Logout',
         component: Logout
     },
     {
-        path: '/facicare/data-setup',
+        path: '/data-setup',
         name: 'DataSetup',
         component: DataSetup,
         meta: {
